@@ -15,8 +15,9 @@ Use Case 2 - Adversaries use commands like whoami after the exploitation/privile
 - If Log Source is WinEventLog AND EventCode is 4688, and NewProcessName contains whoami, then Trigger an ALERT **WHOAMI command Execution DETECTED**
 
 
-**Free Text Search (KQL)**
+## **Free Text Search (KQL)**
 Word terms: "security"
 Source_country: "United States"
 
-
+## **Field-Based Search (KQL)**
+FIELD:VALUE
