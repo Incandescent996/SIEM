@@ -8,4 +8,5 @@ Correlation rules play an important role in the timely detection of threats allo
 4. If outbound traffic is > 25 MB - Raise an alert to potential Data exfiltration Attempt (Usually, it depends on the company policy)
 
 
-Use Case 1 - If the Log source is WinEventLog AND EventID is 104 - Trigger an alert Event Log Cleared
+Use Case 1 - If logs have been cleared or deleted
+- The Log source is WinEventLog AND EventID is 104 - Trigger an alert **Event Log Cleared**
