@@ -8,5 +8,8 @@ Correlation rules play an important role in the timely detection of threats allo
 4. If outbound traffic is > 25 MB - Raise an alert to potential Data exfiltration Attempt (Usually, it depends on the company policy)
 
 
-Use Case 1 - If logs have been cleared or deleted
+Use Case 1 - If logs have been cleared or deleted:
 - The Log source is WinEventLog AND EventID is 104 - Trigger an alert **Event Log Cleared**
+
+Use Case 2 - Adversaries use commands like whoami after the exploitation/privilege escalation phase:
+- If Log Source is WinEventLog AND EventCode is 4688, and NewProcessName contains whoami, then Trigger an ALERT **WHOAMI command Execution DETECTED**
